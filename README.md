@@ -82,14 +82,3 @@ To run the linter and check for code style issues:
 ```bash
 npm run lint
 ```
-
-## Project Structure
-
-- `src/App.jsx`: Main application component containing the logic for state management, data fetching, and rendering.
-- `src/appwrite.js`: Configuration and helper functions for interacting with the Appwrite backend.
-- `src/components/`: Directory containing reusable UI components (Search, Spinner, MovieCard).
-- `src/assets/`: Directory for static assets like images and icons.
-
-## License
-
-This project is open source and available under the MIT License.
