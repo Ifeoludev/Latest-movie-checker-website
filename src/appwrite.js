@@ -17,7 +17,7 @@ const client = new Client()
 const database = new Databases(client);
 
 export const updateSearchCount = async (searchTerm, movie) => {
-  //1. Use Appwrite SDK to check if a record for the search term already exists in the database.
+  // 1. Use Appwrite SDK to check if a record for the search term already exists in the database.
   try {
     const result = await database.listDocuments(DATABASE_ID, TABLE_ID, [
       Query.equal("searchTerm", searchTerm),
@@ -38,11 +38,8 @@ export const updateSearchCount = async (searchTerm, movie) => {
       });
     }
   } catch (error) {
-    console.log(error);
+    console.error(error);
   }
-
-  //2. If it exists, increment the search count for that term.
-  //3. If it doesn't exist, create a new record with the search term and set the count to 1.
 };
 
 export const getTrendingMovies = async () => {
