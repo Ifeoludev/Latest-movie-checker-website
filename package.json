@@ -16,7 +16,6 @@
     "@tailwindcss/vite": "^4.1.13",
     "appwrite": "^18.1.1",
     "gh-pages": "^6.3.0",
-    "my-react-hook-lib": "^1.1.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "tailwindcss": "^4.1.13"
